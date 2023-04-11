@@ -1,4 +1,4 @@
-import Login from './pages/login/Login'
+import Auth from './pages/auth/Auth'
 import Register from './pages/register/Register';
 import Profile from './pages/profile/Profile';
 import ProfileEdit from './pages/profile/profileEdit/EditProfile';
@@ -10,7 +10,7 @@ import Error500 from './pages/error500/Error500';
 
 
 const routes = [
-	{ path: '/', component: Login, },
+	{ path: '/', component: Auth, },
 	{ path: '/register', component: Register, },
 	{ path: '/profile', component: Profile, },
 	{ path: '/profile-edit', component: ProfileEdit, },
