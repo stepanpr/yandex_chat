@@ -1,3 +1,5 @@
+{{!-- авторизация с формой, имена полей: login, password --}}
+
 <div class="auth-container">
   <form class="auth-form">
     <h3 class="auth-form__title">Вход</h3>
@@ -9,9 +11,8 @@
       <input type="text" id="password" name="password" class="auth-form__input" />
     </div>
     <div class="auth-form__buttons">
-      <button class="auth-form__submit">{{login}}</button>
-	  <a href="#"class="auth-form__sign">{{noAccount}}</a>
-      {{!-- <button class="auth-form__sign">{{noAccount}}</button> --}}
+      <button class="auth-form__submit">{{action}}</button>
+	  <a href=""class="auth-form__sign">{{additionalAction}}</a>
     </div>
   </form>
 </div>
