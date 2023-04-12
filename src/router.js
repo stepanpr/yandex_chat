@@ -10,14 +10,14 @@ import Error500 from './pages/error500/Error500';
 
 
 const routes = [
-	{ path: '/', component: Auth, },
-	{ path: '/register', component: Register, },
-	{ path: '/profile', component: Profile, },
-	{ path: '/profile-edit', component: ProfileEdit, },
-	{ path: '/profile-change-password', component: ChangePassword, },
-	{ path: '/chat', component: Chat, },
-	{ path: '/error404', component: Error404, },
-	{ path: '/error500', component: Error500, },
+	{ path: '/', component: Auth(), },
+	{ path: '/register', component: Register(), },
+	{ path: '/profile', component: Profile('profile'), },
+	{ path: '/profile-edit', component: ProfileEdit(), },
+	{ path: '/profile-change-password', component: ChangePassword(), },
+	{ path: '/chat', component: Chat(), },
+	{ path: '/error404', component: Error404(), },
+	{ path: '/error500', component: Error500(), },
 
 
   ];
@@ -74,7 +74,7 @@ export const router = () => {
 	// Render the component in the "app" placeholder
 	console.log(route)
 	if (route && route.path) {
-		root.innerHTML = route.component.render();
+		root.innerHTML = route.component;
 	} else {
 		root.innerHTML = Error404.render();
 	}
