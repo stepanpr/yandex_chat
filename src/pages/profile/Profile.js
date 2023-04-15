@@ -8,7 +8,7 @@ import ProfileChangePassword from './profileChangePassword/ProfileChangePassword
 import ProfileUploadAvatar from './profileUploadAvatar/ProfileUploadAvatar';
 
 //icons
-import arrowLeft_icon from './../../../static/images/arrowLeftIcon.png';
+import arrowLeft_icon from './../../../static/images/arrow_left_icon.png';
 import noAvatar_icon from './../../../static/images/no_avatar_icon.png';
 
 

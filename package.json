@@ -1,11 +1,11 @@
 {
   "name": "yandex_chat",
   "version": "1.0.0",
-  "description": "yandex_practicum",
+  "description": "yandex_practicum/messenger",
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./static/index.html -p 3001",
+    "start": "parcel ./static/index.html -p 3000",
     "build": "parcel build ./static/index.html"
   },
   "repository": {
