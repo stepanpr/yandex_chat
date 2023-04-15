@@ -1,13 +1,10 @@
+import error404Template from './error404.hbs';
+import './error404.less';
 
 const Error404 = () => {
-	// render: () => {
-	  return `
-		<section>
-		  <h1>404</h1>
-		  <p>not found</p>
-		</section>
-	  `;
-	// }
-  } 
+    const context = {};
 
-  export default Error404
+    return error404Template(context);
+};
+
+export default Error404;

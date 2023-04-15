@@ -1,13 +1,10 @@
 
+import error500Template from './error500.hbs';
+import './error500.less';
 const Error500 = () => {
-	// render: () => {
-	  return `
-		<section>
-		  <h1>500</h1>
-		  <p>уже фиксим</p>
-		</section>
-	  `;
-	// }
-  } 
+    const context = { action: 'Зарегестрироваться', additionalAction: 'Войти' };
 
-  export default Error500
+    return error500Template(context);
+};
+
+export default Error500;
