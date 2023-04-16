@@ -1,6 +1,6 @@
+// const { router } = require("./router");
 
+export * from './router.js'
 
-import {sum} from './modules/sum';
+// router()
 
-const root = document.querySelector('#root');
-root.textContent = sum(3, -1).toString(); 
